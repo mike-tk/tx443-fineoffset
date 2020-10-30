@@ -97,3 +97,12 @@ void loop() {
 }
 
 ```
+
+Result from rtl_443
+```
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+time      : 2020-10-30 16:24:29
+model     : Fine Offset Electronics WH1080/WH3080 Weather Station            Msg type  : 0             Station ID: 24
+Temperature: 22.5 C      Humidity  : 55 %          Wind degrees: 0           Wind avg speed: 0.00
+Wind gust : 0.00         Total rainfall: 0.0       Battery   : LOW           Integrity : CRC
+```
