@@ -8,6 +8,18 @@ Parts of code from https://github.com/zagor/FineOffset
 Example
 
 ```
+Simple data transmission sequence to the Wh-1081 weather station. The transmission consists of: - 
+1 byte of start 0xFF - 
+9 byte of data - 
+1 byte of Checksum (CRC8 with polynomial 100110001).
+BIT 0 is a pulse of 1,5mS to 1 logic and 1mS to 0 logic (total 2,5mS) 
+BIT 1 is a pulse of 0,5mS to 1 logic and 1mS to 0 logic (total 1,5mS) 
+Example Transmission : 
+START = 0XFF, ID DEVICE = 0XA2A, 
+TEMP = 0X261, HUMIDITY = 0X3A, WIND = 0X03, BURST = 0X10, RAIN = 0X00, RAIN = 0X00, FLAG = 0X0, DIREZ = 0X4, CKS = 0X29.
+```
+
+```
 ff FI IT TT HH SS GG ?R RR BD CC
 ff - OOK header
 F: 4 bit fixed message format
